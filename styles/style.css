@@ -1,0 +1,8 @@
+body{
+    background-color: black;
+    width: 100%;
+}
+img{
+    max-width: 500px;
+    max-height: 500px;
+}
