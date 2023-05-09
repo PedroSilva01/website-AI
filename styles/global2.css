@@ -1,0 +1,57 @@
+body {
+    background-color: #000;   
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+header {
+    display: flex;
+    margin: 0rem;
+    padding: 0rem;
+    align-items: center;
+    width: 100%;
+}
+
+.nav_bar1 {
+    width: 33.3%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav_bar1 ul li {
+    margin-right: 1.3rem;
+}
+
+.nav_bar1 ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav_bar2 img {
+    width: 1.5rem;
+}
+
+.nav_bar2 {
+    width: 33.3%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav_bar2 ul li {
+    margin-right: 0.5rem;
+}
+
+.logo_principal img {
+    width: 19rem;
+}
+
+.logo_principal {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
