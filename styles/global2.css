@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@font-face {
+  font-family: 'IncompleetaRegular';
+  src: url('../Fonts/IncompleetaRegular.woff2') format('woff2'),
+       url('../Fonts/IncompleetaRegular.woff') format('woff');
+}
+
 body {
     background-color: #000;   
     margin: 0.2rem;
     padding: 0.2rem;
+    font-family: 'Castoro Titling', cursive, 'Oswald','Poppins', sans-serif;
 }
 
 header {
@@ -13,42 +22,49 @@ header {
 }
 
 .nav_bar1 {
-    width: 33.3%;
-    display: flex;
-    justify-content: flex-start;
+  width: 33.3%;
+  display: flex;
+  justify-content: flex-start;
+
 }
 
 .nav_bar1 ul li {
-    margin-right: 1.3rem;
+  margin-right: 1.3rem;
+}
+
+.nav_bar1 ul li :hover{
+  color: #00d9ff;
+  transition: 0.5s;
+
 }
 
 .nav_bar1 ul li a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav_bar2 img {
-    width: 1.8rem;
+  width: 1.8rem;
 }
 
 .nav_bar2 {
-    width: 33.3%;
-    display: flex;
-    justify-content: flex-end;
+  width: 33.3%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav_bar2 ul li {
-    margin-right: 1.3rem;
+  margin-right: 1.3rem;
 }
 
 .logo_principal img {
-    width: 19rem;
+  width: 17rem;
 }
 
 .logo_principal {
-    width: 33.3%;
-    display: flex;
-    justify-content: center;
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
@@ -80,16 +96,31 @@ article {
 h1 {
     font-size: 32px;
     font-weight: bold;
+    font-family: 'IncompleetaRegular';
+  }
+  h1:hover{
+    color: #00d9ff;
+    transition: 0.6s;
+    padding-left: 1rem;
   }
   
   h2 {
     font-size: 24px;
+    min-width: 35rem;
+    font-family: 'IncompleetaRegular';
+  }
+  h2:hover{
+    color: #00d9ff;
+    transition: 0.6s;
+    padding-left: 1rem;
   }
   
   p {
     font-size: 16px;
     text-align: justify;
     text-transform: capitalize;
+    min-width: 30rem;
+    width: 35rem;
   }
   ::-webkit-scrollbar {
     width: 12px;
@@ -176,7 +207,7 @@ h1 {
   .footer-col ul li a{
     font-size: 16px;
     text-transform: capitalize;
-    color: #ffffff;
+    color: #05B7F7;
     text-decoration: none;
     font-weight: 300;
     color: #bbbbbb;
@@ -185,7 +216,7 @@ h1 {
   }
 
   .footer-col ul li a:hover{
-    color: #ffffff;
+    color: #05B7F7;
     padding-left: 8px;
   }
 
