@@ -24,21 +24,62 @@ header {
 .nav_bar1 {
   width: 33.3%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 
 }
-
+.nav_bar1 ul{
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 .nav_bar1 ul li {
-  margin-right: 1.3rem;
+  flex: 1;
+  text-align: center;
+  transition: flex 0.4s ease-in-out;
+}
+
+.nav_bar1 ul li:hover{
+  flex: 1.12;
+  color: #00d9ff;
+  transition: flex 0.4s ease-in-out;
+}
+/* JAVASCRIPT AO PASSAR O MOUSE EM CIMA DO "LI", MUDAR A COR DO TEXTO DENTRO DA TAG "A" TBM*/
+
+.nav_bar1 ul li:not(:hover) {
+  flex: 1;
+  transition: flex 0.8s ease-in-out;
+  color: #fff;
+  background-color: #000;
 }
 
 .nav_bar1 ul li a {
   text-decoration: none;
   color: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
+.nav_bar1 ul li a:hover {
+  color: #00d9ff;
+  font-size: 1.25rem;
+  transition: 0.4s ease-in-out;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
 .nav_bar2 img {
-  width: 1.8rem;
+  width: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_bar2 img:hover{
+  width: 2.5rem;
+  transition: 0.5s ease-in-out;
+  transition-delay: 50ms;
 }
 
 .nav_bar2 {
@@ -46,10 +87,44 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+.nav_bar2 ul li:hover{
+  height: 2.75rem;
+  transition: 0.5s ease-in-out;
+  transition-delay: 50ms;
+}
 
 .nav_bar2 ul li {
-  margin-right: 1.3rem;
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 30%;
+  justify-content: center;
+  /* margin-right: 1.3rem; */
 }
+
+.nav_bar2 ul li a{
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  /* margin-right: 1.3rem; */
+}
+
+
+
+
+.nav_bar2 ul {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
 
 .logo_principal img {
   width: 17rem;
@@ -108,7 +183,7 @@ article {
   }
   h1:hover{
     color: #00d9ff;
-    transition: 0.6s;
+    transition: 0.6s ease-out;
     padding-left: 1rem;
   }
   
@@ -282,4 +357,12 @@ article {
     transition: 0.45s;
   }
   
-  
+  /* AS PROXIMAS 5 LINHAS É PARA MUDAR O TEXTO E COR DE SELEÇÃO DE TEXTO */
+  ::-moz-selection {
+    background: #000;
+    color: #00d9ff;
+  }
+  ::selection {
+    background: #000;
+    color: #00d9ff;
+  }
