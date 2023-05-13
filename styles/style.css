@@ -9,7 +9,7 @@
 body{
     color: #fff;
     background-color: #000;
-    line-height: 1.5;
+    line-height: 1.6;
     font-family: 'Castoro Titling', cursive, 'Oswald','Poppins', sans-serif;
 }
 
@@ -110,30 +110,26 @@ header {
   /* margin-right: 1.3rem; */
 }
 
-
-
-
 .nav_bar2 ul {
   width: 75%;
   display: flex;
   justify-content: space-around;
 }
 
-
-
-
-
-
-
-
-.logo_principal img {
-  width: 17rem;
-}
-
 .logo_principal {
   width: 33.3%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  justify-self: center;
+  justify-items: center;
+  line-height: 1.2;
+}
+
+.logo_principal span{
+  display: flex;
+  justify-content: center;
+  line-height: 1.2;
 }
 
 nav ul {
@@ -163,11 +159,11 @@ main {
 }
 
 main {
-    display: flex;
-    align-items: center;
-    max-height: 90vh;
-    height: 90vh;
-    /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  max-height: 90vh;
+  height: 90vh;
+  cursor: default;
 }
   
 article {
@@ -365,4 +361,22 @@ article {
   ::selection {
     background: #000;
     color: #00d9ff;
+  }
+  #main-logo{
+    font-family: 'IncompleetaRegular';
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: #00d9ff;
+    cursor: default;
+  }
+  #slogan{
+    font-family: 'IncompleetaRegular';
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: default;
+  }
+
+  #main-logo::selection{  
+    background: #000;
+    color: #fff;
   }
