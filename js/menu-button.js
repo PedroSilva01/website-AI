@@ -1,23 +1,26 @@
-function exibir() {
-    var popup = document.getElementById("popup");
-    var imagemAtual = document.getElementById("imagem");
-    imagemAtual.src = imagens[indiceAtual];
-    popup.style.display = "block";
-  }
+// Obtém uma referência à div e ao botão
+const div = document.getElementById('popupMenu');
+const botao = document.getElementById('btnMenu');
 
-  function proximo() {
-    indiceAtual++;
-    if (indiceAtual >= imagens.length) {
-      ocultar();
-    } else {
-      exibir();
-    }
-  }
+// Função para exibir a div
+function exibirDiv() {
+  div.style.display = 'flex';
+}
 
-  function ocultar() {
-    var popup = document.getElementById("popup");
-    popup.style.display = "none";
-  }
+// Função para ocultar a div
+function ocultarDiv() {
+  div.style.display = 'none';
+}
 
-  var botaoProximo = document.getElementById("botao-proximo");
-  botaoProximo.addEventListener("click", proximo);
+// Função para lidar com o clique fora da div
+function cliqueForaDiv(event) {
+  if (!div.contains(event.target) && event.target !== botao) {
+    ocultarDiv();
+  }
+}
+
+// Adiciona o evento de clique ao botão
+botao.addEventListener('click', exibirDiv);
+
+// Adiciona o evento de clique ao documento inteiro
+document.addEventListener('click', cliqueForaDiv);
