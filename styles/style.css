@@ -2,11 +2,15 @@
   font-family: 'IncompleetaRegular';
   src: url('../Fonts/IncompleetaRegular.woff') format('woff');
 }
+@font-face {
+  font-family: 'Castoro';
+  src: url('../Fonts/CastoroTitling-Regular.woff') format('woff');
+}
 body{
   color: #fff;
   background-color: #000;
   line-height: 1.6;
-  font-family: 'Castoro Titling', cursive, 'Oswald','Poppins', sans-serif;
+  font-family: 'Castoro';
 }
 header {
   display: flex;
@@ -47,11 +51,17 @@ header {
   margin: 0;
   padding: 0;
 }
+.codecty-menu{
+  letter-spacing: 0.2em;
+}
 #menu{
   background: none;
   border: none;
   margin-right: 1rem;
   cursor: pointer;
+}
+#codecty-content{
+  letter-spacing: 0.080em;
 }
 .button{
   width: 3rem;
