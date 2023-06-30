@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'IncompleetaRegular';
+    src: url('../Fonts/IncompleetaRegular.woff') format('woff');
+}
+.join-us{
+    margin-top: 5em;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.formu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form_option{
+    display: flex;
+    flex-direction: column;
+    width: 42.5vw;
+}
+.form_option input{
+    border-radius: 10px;
+    border-color: rgb(#00d9ff, #12343a, #00d9ff);
+    border-width: 0.25em;
+    width: 90%;
+    height: 60%;
+}
+.checkbox label{
+    font-family: IncompleetaRegular;
+    font-weight: 300;
+    letter-spacing: 0.53em;
+    font-size: 1.15em;
+}
+.form_option label{
+    font-family: IncompleetaRegular;
+    font-weight: 300;
+    letter-spacing: 0.225em;
+    font-size: 1.65em;
+}
+.motivational{
+    font-family: IncompleetaRegular;
+    font-weight: 300;
+    letter-spacing: 0.66em;
+    font-size: 1.65em;
+    transition: all 0.3s ease-in;
+    animation: pulsate 0.11s ease-in-out alternate;  
+}
+
+.motivational:hover {
+    color: #fff;
+    transition: 0.45s ease-in-out infinity;
+    text-shadow:
+    0 0 1px #fff,
+    0 0 1.2px #fff,
+    0 0 1.4px #fff,
+    0 0 2px #000,
+    0 0 4px #000,
+    0 0 6px #000,
+    0 0 8px #000,
+    0 0 10px #000;
+}
+.hold_motivational{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+@keyframes pulsate {
+    
+    100% {
+  
+        text-shadow:
+        0 0 1px #fff,
+        0 0 1.2px #fff,
+        0 0 1.4px #fff,
+        0 0 2px #00d9ff,
+        0 0 4px #00d9ff,
+        0 0 6px #000,
+        0 0 8px #000,
+        0 0 10px #00d9ff;
+    
+    }
+    
+    0% {
+  
+        text-shadow:
+        0 0 1px #fff,
+        0 0 1.2px #fff,
+        0 0 1.4px #fff,
+        0 0 2px #00d9ff,
+        0 0 4px #00d9ff,
+        0 0 6px #000,
+        0 0 8px #000,
+        0 0 10px #000;
+  
+  }
+}
