@@ -1,26 +1,29 @@
-// Obtém uma referência à div e ao botão
-const div = document.getElementById('popupMenu');
-const botao = document.getElementById('btnMenu');
+var btn = document.getElementById('btnMenu');
+var menu = document.getElementById('popupMenu');
 
-// Função para exibir a div
-function exibirDiv() {
-  div.style.display = 'flex';
+function exibirMenu(){
+  menu.style.display = 'flex';
 }
 
-// Função para ocultar a div
-function ocultarDiv() {
-  div.style.display = 'none';
+function ocultarMenu(){
+  menu.style.display = 'none'
 }
 
-// Função para lidar com o clique fora da div
-function cliqueForaDiv(event) {
-  if (!div.contains(event.target) && event.target !== botao) {
-    ocultarDiv();
+function ocultarfora(event){
+  if(!menu.contains(event.target) && event.target !== btn){
+    ocultarMenu();
   }
 }
 
-// Adiciona o evento de clique ao botão
-botao.addEventListener('click', exibirDiv);
+function showandclear(){
+  if(menu.style.display === 'none'){
+    exibirMenu();
+  }
+  else{
+    ocultarMenu();
+  }
+}
 
-// Adiciona o evento de clique ao documento inteiro
-document.addEventListener('click', cliqueForaDiv);
+btn.addEventListener('click', showandclear);
+//document.addEventListener('click', ocultarfora);
+
