@@ -107,13 +107,6 @@ main {
   max-height: 90vh;
   height: 90vh;
 }
-.img_home img {
-  width: 36rem;
-}
-.img_home {
-  margin-right: 2rem;
-  display: flex;
-}  
 article {
     width: 50%;
     padding: 0 10%;
@@ -149,19 +142,16 @@ article {
     min-width: 30rem;
     width: 35rem;
   }
-  
   .image-container {
     width: 40%;
-    max-height: 82.15vh;
+    max-height: 81vh;
     background-color: #FFFFFF;
   }
-  
   img {
     max-height: 100%;
     max-width: 100%;
     width: auto;
     height: auto;
-
   }
 
 /* Define the style of the scrollbar */
@@ -335,6 +325,7 @@ article {
     display: flex;
     justify-content: flex-end;
     padding-right: 1em;
+    display: none;
   }
   .menu-options{
     display: flex;
@@ -343,6 +334,7 @@ article {
     width: auto;
     height: max-content;
     backdrop-filter: blur(10px);
+    
   }
   .menu-options button{
     cursor: pointer;
@@ -363,4 +355,12 @@ article {
   .optionAlternative{
     display: flex;
     flex-direction: column;
+    display: none;
+  }
+  .btnEnviar{
+    background-color: #00d9ff;
+    border-radius: 10px;
+    font-family: 'Castoro';
+    font-size: larger;
+    font-weight: bold;
   }

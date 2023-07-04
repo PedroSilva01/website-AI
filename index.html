@@ -42,12 +42,12 @@
             <h2 id="codecty-main"></h2><br>
             <p id="codecty-content"></p>
         </article>
-        <div class="popup-menu" id="popupMenu" style="display:none;">
+        <div class="popup-menu" id="popupMenu">
             <div class="menu-options">
                     <button type="button" id="btnLogin">
                         Login
                     </button>
-                    <div class="optionAlternative" id="optionAlternative" style="display: none;">
+                    <div class="optionAlternative" id="optionAlternative">
                         <button type="button" id="btnAnswer">
                             Resposta do form
                         </button>
@@ -66,16 +66,16 @@
             <form action="/get_form.py" method="get" class="form">
                 <div class="form_option">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" required placeholder="Insira o seu nome">
+                    <input type="text" id="nome" name="nome" required placeholder=" Insira o seu nome">
                 </div>
                 <div class="form_option">
                     <label for="sobrenome">Sobrenome</label>
-                    <input type="text" id="sobrenome" name="sobrenome" required placeholder="Insira o seu sobrenome">
+                    <input type="text" id="sobrenome" name="sobrenome" required placeholder=" Insira o seu sobrenome">
                 </div>
 
                 <div class="form_option">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="Insira o seu email">
+                    <input type="email" id="email" name="email" required placeholder=" Insira o seu email">
                 </div>
 
                 <div class="checkbox">
@@ -96,7 +96,7 @@
                         <label for="html-technologie">Html</label>
                     </div>
                 </div>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" class="btnEnviar">
             </form>
         </div>
     </div>
