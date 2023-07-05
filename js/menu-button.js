@@ -1,23 +1,29 @@
-function exibir() {
-    var popup = document.getElementById("popup");
-    var imagemAtual = document.getElementById("imagem");
-    imagemAtual.src = imagens[indiceAtual];
-    popup.style.display = "block";
-  }
+var btn = document.getElementById('btnMenu');
+var menu = document.getElementById('popupMenu');
 
-  function proximo() {
-    indiceAtual++;
-    if (indiceAtual >= imagens.length) {
-      ocultar();
-    } else {
-      exibir();
-    }
-  }
+function exibirMenu(){
+  menu.style.display = 'flex';
+}
 
-  function ocultar() {
-    var popup = document.getElementById("popup");
-    popup.style.display = "none";
-  }
+function ocultarMenu(){
+  menu.style.display = 'none'
+}
 
-  var botaoProximo = document.getElementById("botao-proximo");
-  botaoProximo.addEventListener("click", proximo);
+function ocultarfora(event){
+  if(!menu.contains(event.target) && event.target !== btn){
+    ocultarMenu();
+  }
+}
+
+function showandclear(){
+  if(menu.style.display === 'none'){
+    exibirMenu();
+  }
+  else{
+    ocultarMenu();
+  }
+}
+
+btn.addEventListener('click', showandclear);
+//document.addEventListener('click', ocultarfora);
+
