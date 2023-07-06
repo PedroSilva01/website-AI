@@ -359,42 +359,9 @@ article {
     margin-bottom: 1.25%;
   }
   .announcement-team:hover{
-    transition: all 0.25s ease-in;
-    animation: pulsate-team 0.55s ease-in-out infinite;
-    
-    /* color: #00d9ff; */
+    transition: all 0.75s ease-in-out;
+    animation: pulsate 0.75s ease-in-out infinite;
   }
-
-  @keyframes pulsate-team {
-    
-    100% {
-  
-        text-shadow:
-        0 0 0.2px #ffffff,
-        0 0 0.4px #ffffff,
-        0 0 0.6px #ffffff,
-        0 0 0.8px #ffffff,
-        0 0 1.2px #ffffff,
-        0 0 1.6px #ffffff,
-        0 0 2px #00d9ff,
-        0 0 2.5px #00d9ff;
-    
-    }
-    
-    0% {
-  
-      text-shadow:
-      0 0 0.2px #00d9ff,
-      0 0 0.4px #00d9ff,
-      0 0 0.6px #ffffff,
-      0 0 0.8px #ffffff,
-      0 0 1.2px #ffffff,
-      0 0 1.6px #ffffff,
-      0 0 2px #ffffff,
-      0 0 2.5px #ffffff;
-  
-  }
-}
   /* fim team members parte */
   .popup-menu{
     width: 100%;
