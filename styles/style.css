@@ -6,7 +6,7 @@
 @font-face {
   font-family: 'Castoro';
   src: url('../Fonts/CastoroTitling-Regular.woff2') format('woff2');
-  src: url('../Fonts/CastoroTitling-Regular.woff') format('woff');
+  /* src: url('../Fonts/CastoroTitling-Regular.woff') format('woff'); */
   font-display: swap;
 }
 body{
