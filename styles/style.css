@@ -1,10 +1,12 @@
 @font-face {
   font-family: 'IncompleetaRegular';
   src: url('../Fonts/IncompleetaRegular.woff') format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Castoro';
   src: url('../Fonts/CastoroTitling-Regular.woff') format('woff');
+  font-display: swap;
 }
 body{
   box-sizing: border-box;
