@@ -69,3 +69,16 @@ header {
     justify-content: flex-end;
     padding-top: 0.6rem;
   }
+  .logo_principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-self: center;
+    justify-items: center;
+    line-height: 1.2;
+    width: 33.3%;
+  }
+  .logo_principal span{
+    display: flex;
+    justify-content: center;
+  }
