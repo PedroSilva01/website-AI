@@ -26,4 +26,3 @@ function showandclear(){
 
 btn.addEventListener('click', showandclear);
 //document.addEventListener('click', ocultarfora);
-
