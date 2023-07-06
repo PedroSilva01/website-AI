@@ -402,11 +402,4 @@ article {
     flex-direction: column;
     display: none;
   }
-  .btnEnviar{
-    background-color: #00d9ff;
-    border-radius: 10px;
-    font-family: 'Castoro';
-    font-size: larger;
-    font-weight: bold;
-  }
 

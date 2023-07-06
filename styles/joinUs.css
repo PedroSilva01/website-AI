@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 .form_option{
     display: flex;
@@ -27,11 +28,16 @@
     width: 42.5vw;
 }
 .form_option input{
-    border-radius: 10px;
     border-color: rgb(#00d9ff, #12343a, #00d9ff);
     border-width: 0.25em;
     width: 90%;
     height: 60%;
+}
+.checkbox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .checkbox label{
     font-family: IncompleetaRegular;
@@ -44,7 +50,8 @@
     font-weight: 300;
     letter-spacing: 0.225em;
     font-size: 1.65em;
-    transition: all 0.75s;
+    margin-bottom: 0.8rem;
+
 }
 .motivational{
     font-family: IncompleetaRegular;
@@ -95,4 +102,25 @@
         0 0 1.8px #ffffff;
   
   }
+}
+.btnEnviar{
+    background-color: #00d9ff;
+    border-radius: 10px;
+    font-family: 'castoro';
+    font-size: larger;
+    font-weight: bolder;
+    width: 8rem;
+    height: 2rem;
+  }
+.input-text{
+    border: none;
+    outline: none;
+    background-color: #000;
+    border-bottom: #00d9ff inset 1px;
+    border-left: #00d9ff inset 0.1rem;
+    font-size: 1rem;
+    color: #fff;
+    padding-left: 0.1rem;
+    display: flex;
+    margin-left: 0.5rem;
 }
