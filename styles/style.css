@@ -194,6 +194,7 @@ article {
   .team-img{
     width: 10rem;
     height: 10rem;
+    /* border-radius: 30%; */
   }
   .member{
     max-width: 70vw;
