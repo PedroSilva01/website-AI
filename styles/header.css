@@ -82,3 +82,24 @@ header {
     display: flex;
     justify-content: center;
   }
+@media(max-width: 735px){
+  .nav_bar1{
+    display: none;
+  }
+  .logo_principal{
+    width: 50%;
+  }
+  .nav_bar2{
+    width: 50%;
+  }
+  .logo_principal span{
+    display: flex;
+    justify-content: flex-start;
+  }
+  #main-logo{
+    color:#fff;
+  }
+  #slogan{
+    display: none;
+  }
+}
