@@ -124,3 +124,24 @@
     display: flex;
     margin-left: 0.5rem;
 }
+@media(max-width: 414px){
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+    }
+    .form_option{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .checkbox{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1em;
+    }
+}
