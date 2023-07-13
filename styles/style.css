@@ -29,9 +29,10 @@ main {
 }
 article {
     width: 50%;
-    padding: 10%;
+    padding: 0 10%;
     min-width: 35rem;
 }
+  
   h1 {
     font-size: 32px;
     font-weight: bold;
@@ -42,6 +43,7 @@ article {
     transition: 0.6s ease-out;
     padding-left: 1rem;
   }
+  
   h2 {
     font-size: 24px;
     min-width: 35rem;
@@ -52,15 +54,17 @@ article {
     transition: 0.6s;
     padding-left: 1rem;
   }
+  
   p {
     font-size: 16px;
     text-align: justify;
     text-transform: capitalize;
+    min-width: 30rem;
     width: 35rem;
   }
   .image-container {
-    width: 40%;
-    max-height: 80vh;
+    width: 39%;
+    max-height: 82vh;
     background-color: #FFFFFF;
   }
   .main-img {
@@ -69,6 +73,7 @@ article {
     width: auto;
     height: auto;
   }
+
 /* Define the style of the scrollbar */
 ::-webkit-scrollbar {
     width: 12px;
@@ -101,6 +106,7 @@ article {
   ul{
     list-style: none;
   }
+  
   /*responsive*/
   @media(max-width: 767px){
     .footer-col{
@@ -113,12 +119,16 @@ article {
       width: 100%;
   }
   }
-
+  footer {
+    background-color: #f0f0f0;
+  }
+  
   .credits {
     width: 100%;
     display: inline-flex;
     justify-content: center;
   }
+  
   .creditos {
     /* display: inline; */
     display: flex;
@@ -129,6 +139,7 @@ article {
   .creditos span{
     color: #bbbbbb;
   }
+  
   .creditos-link{
     text-decoration: none;
     font-weight: 500;
@@ -138,6 +149,7 @@ article {
     color: #00d9ff;
     transition: 0.45s;
   }
+  
   /* AS PROXIMAS 5 LINHAS É PARA MUDAR O TEXTO E COR DE SELEÇÃO DE TEXTO */
   ::-moz-selection {
     background: #000;
@@ -160,10 +172,12 @@ article {
     font-weight: 500;
     cursor: default;
   }
+
   #main-logo::selection{  
     background: #000;
     color: #fff;
   }
+
   .checked-img{
     display: none;
   }
@@ -180,6 +194,7 @@ article {
   .team-img{
     width: 10rem;
     height: 10rem;
+    /* border-radius: 30%; */
   }
   .member{
     max-width: 70vw;
@@ -199,7 +214,7 @@ article {
     padding-left: 0.75rem;
   }
   .announcement-team{
-    font-family: 'IncompleetaRegular';
+    font-family: IncompleetaRegular;
     text-transform: capitalize;
     font-size: 2rem;
     letter-spacing: 0.080em;
@@ -214,9 +229,10 @@ article {
     width: 100%;
     height: 90%;
     position: absolute;
-    display: none;
+    display: flex;
     justify-content: flex-end;
     padding-right: 1em;
+    display: none;
   }
   .menu-options{
     display: flex;
@@ -237,16 +253,16 @@ article {
     border-bottom: #00d9ff solid 0.1px;
     padding-left: 1em;
     padding-right: 1em;
-    font-family: 'Castoro';
   }
   .menu-options button:hover{
     background: #00d9ff;
     color: #000;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in;
   }
   .optionAlternative{
     display: flex;
     flex-direction: column;
+    display: none;
   }
 @media(max-width: 1750px){
   .image-container {
@@ -339,3 +355,4 @@ article {
     letter-spacing: 0rem;
   }
 }
+
