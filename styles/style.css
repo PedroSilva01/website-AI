@@ -297,7 +297,7 @@ article {
     word-wrap: break-word;
   }
   .image-container {
-    width: 15rem;
+    width: 32.6vh;
     max-height: 32.6vh;
   }
   .nav_bar1Min{
@@ -322,5 +322,20 @@ article {
     justify-content: center;
     height: 3em;
     align-items: center;
+  }
+}
+@media(max-width: 500px){
+  .member img{
+    width: 8rem;
+    height: 8rem;
+  }
+  .team-history{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    text-justify: inter-word;
+    justify-content: space-between;
+    font-size: 12px;
+    letter-spacing: 0rem;
   }
 }
