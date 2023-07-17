@@ -276,7 +276,8 @@ article {
 }
 @media(max-width: 1366px){
   .image-container {
-    max-height: 65vh;
+    max-height: 69vh;
+    width: auto;
   }
 }
 @media(max-width: 735px){
