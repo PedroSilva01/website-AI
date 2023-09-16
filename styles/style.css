@@ -64,15 +64,15 @@ article {
     width: 35rem;
   }
   .image-container {
-    width: 39%;
-    max-height: 82vh;
-    background-color: #FFFFFF;
+    width: 40%;
+    max-height: 80vh;
   }
   .main-img {
     max-height: 100%;
     max-width: 100%;
     width: auto;
     height: auto;
+    background-color: #FFFFFF;
   }
 
 /* Define the style of the scrollbar */
