@@ -1,106 +1,70 @@
-header {
-    display: flex;
-    margin: 0rem;
-    align-items: center;
-    width: 100%;
-    border-bottom: 1px solid #00d9ff;
-    padding-bottom: 0.6rem;
-  }
-  .nav_bar1 {
-    width: 33.3%;
-  }
-  .nav_bar1 ul{
-    min-width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 0.6rem;
-  }
-  /* JAVASCRIPT AO PASSAR O MOUSE EM CIMA DO "LI", MUDAR A COR DO TEXTO DENTRO DA TAG "A" TBM*/
-  .nav_bar1 ul li:not(:hover) {
-    color: #fff;
-    background-color: #000;
-  }
-  .nav_bar1 ul li a {
-    text-decoration: none;
-    color: #fff;
-    height: 100%;
-    width: 100%;
-    font-family: 'IncompleetaRegular';
-    font-size: 1.3rem;
-  }
-  .nav_bar1 ul li a:hover {
-    color: #00d9ff;
-    transition: 0.5s;
-  }
-  .nav_bar2 img {
-    width: 2.5rem;
-    margin: 0;
-    padding: 0;
-  }
-  .codecty-menu{
-    letter-spacing: 0.2em;
-  }
-  #btnMenu{
-    background: none;
-    border: none;
-    margin-right: 1rem;
-    cursor: pointer;
-  }
-  #codecty-content{
-    letter-spacing: 0.080em;
-  }
-  .button{
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: none;
-  }
-  .button-bar{
-    width: 100%;
-    height: 0.3rem;
-    background-color: #00d9ff;
-  }
-  .nav_bar2 {
-    width: 33.3%;
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 0.6rem;
-  }
-  .logo_principal {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-self: center;
-    justify-items: center;
-    line-height: 1.2;
-    width: 33.3%;
-  }
-  .logo_principal span{
-    display: flex;
-    justify-content: center;
-  }
-@media(max-width: 735px){
-  .nav_bar1{
+@font-face {
+  font-family: incompletaRegular;
+  src: url(../Fonts/IncompleetaRegular.woff2);
+}
+*{
+  color: white;
+}
+header{
+  width: 100%;
+  display: flex;
+  font-family: 'incompletaRegular';
+  border-bottom: #00d9ff solid 2px;
+  padding-bottom: 5px;
+  justify-content: space-between;
+}
+.logoPrincipal{
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+}
+#logoName{
+  font-size: 2.8rem;
+  color: #00d9ff;
+}
+.navbar{
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar a{
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.lavlogin{
+  width: 33.3%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.lavlogin button{
+  background-color: #00d9ff;
+  color:#000;
+  border-radius: 25px;
+  width: 6rem;
+  height: 3rem;
+  cursor: pointer;
+}
+@media (max-width: 1100px){
+  .navbar{
     display: none;
-  }
-  .logo_principal{
-    width: 50%;
-    padding-left: 0.2rem;
-  }
-  .nav_bar2{
+    }
+  .logoPrincipal{
     width: 50%;
   }
-  .logo_principal span{
-    display: flex;
-    justify-content: flex-start;
+  .lavlogin{
+    width: 50%;
   }
-  #main-logo{
-    color:#fff;
+}
+@media (max-width: 600px) {
+  #logoName{
+    color: #fff;
   }
-  #slogan{
+  .logoPrincipal{
+    padding-bottom: 0.5rem;
+  }
+  #logoDesc{
     display: none;
   }
 }
