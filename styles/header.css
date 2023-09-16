@@ -31,6 +31,7 @@ header{
 .navbar a{
   text-decoration: none;
   font-size: 1.5rem;
+  color: #fff;
 }
 .lavlogin{
   width: 33.3%;
