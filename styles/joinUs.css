@@ -2,7 +2,167 @@
     font-family: 'IncompleetaRegular';
     src: url('../Fonts/IncompleetaRegular.woff2') format('woff2');
 }
-.join-us{
+@font-face {
+    font-family: 'Castoro';
+    src: url('../Fonts/CastoroTitling-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'IncompleetaRegular';
+}
+body{
+    background-image: url(../img/form_image/10016491_27230.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.w60{
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+
+.w40{
+    width: 20%;
+    float: left;
+    padding-right: 15px;
+}
+
+.w50{
+    width: 20%;
+    float: left;
+    padding-right: 15px;
+}
+
+.checkbox{
+    border: 1px solid red;
+    width: 100%;
+    height: 40%;
+    display: block;
+}
+
+.box{
+    display: flex;
+    width: 930px;
+}
+
+.form-box{
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: 40px;
+    padding: 30px 40px 40px 30px;
+    border-radius: 0 20px 20px 0;
+}
+.form-box ::-moz-selection{
+    background-color: transparent !important; 
+    color: #00d9ff;
+}
+.form-box ::selection{
+    background-color: transparent !important;
+    color: #00d9ff;
+}
+.form-box h2{
+    font-size: 30px;
+    
+}
+.technologies-choices{
+    width: 50px;
+    height: 50px;
+}
+
+form .technologies-choices:checked{
+    accent-color: #00d9ff;
+}
+
+form .technologies-choices:checked ~ label{
+    color: #00d9ff;
+}
+.form-box form{
+    margin: 20px 0;
+}
+form .input-group{
+    margin-bottom: 15px;
+}
+
+form .input-group label{
+    color: #3D3D3d;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form .input-group input{
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+
+form .message input{
+    display: inline;
+    padding: 10% 0% 10% 2%;
+    text-wrap: wrap;
+    color: #141414;
+    font-family: 'Castoro';
+    letter-spacing: 0.75px;
+}
+form .message input::placeholder{
+    font-family: 'IncompleetaRegular';
+}
+
+form .input-group input:focus{
+    border-color: #FF008869;
+    transition: all 0.4s ease-in-out;
+}
+
+form .input-group button{
+    width: 100%;
+    height: 47px;
+    border-radius: 20px;
+    background: #FF008A;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width:930px) {
+    .img-box{
+        display: none;
+    }
+    .box{
+        width: 700px;
+    }
+    .form-box{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    .w50{
+        width: 100%;
+        padding: 0;
+    }
+}
+/* .join-us{
     margin-top: 5em;
     height: 100vh;
     width: 100%;
@@ -166,4 +326,4 @@
         width: 100%;
     }
     
-}
+} */
