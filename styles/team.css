@@ -31,9 +31,10 @@ body{
     align-items: center;
 }
 .containerCard{
-    width: 350px;
-    height: 500px;
+    width: 22.5%;
+    height: 75.5%;
     perspective: 750px;
+    margin-bottom: 5%;
 }
 
 .card{
@@ -62,7 +63,7 @@ body{
 }
 
 .front{
-    background-image: url(../img/members/pedro.webp);
+    background-image: url(../img/members/pedro-codecty.webp);
     background-size:auto;
     object-fit: fill;
     background-repeat: no-repeat;
@@ -108,4 +109,25 @@ body{
 
 span img{
     margin-top: 6%;
+}
+
+@media (max-width: 900px) {
+    .front{
+        background-size: cover;
+    }
+    .back{
+        font-size: 0.35rem;
+    }
+    .rowTech span img{
+        max-height: 0.8rem;
+        max-width: 0.8rem;
+    }
+    .technology span img{
+        max-height: 0.8rem;
+        max-width: 0.8rem;
+    }
+    .containerCard{
+        max-height: 70vh;
+        max-width: 20vw;
+    }
 }
