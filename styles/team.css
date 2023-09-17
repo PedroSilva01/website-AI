@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'IncompleetaRegular';
+    src: url('../Fonts/IncompleetaRegular.woff2') format('woff2');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Castoro';
+    src: url('../Fonts/CastoroTitling-Regular.woff2') format('woff2');
+    /* src: url('../Fonts/CastoroTitling-Regular.woff') format('woff'); */
+    font-display: swap;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    background: #000000;
+    font-family: 'IncompleetaRegular', 'Castoro';
+    color: #00002389;
+    letter-spacing: 0.09rem;
+}
+.fullSize{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerCard{
+    width: 350px;
+    height: 500px;
+    perspective: 750px;
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.containerCard:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.front,
+.back{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: 40px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 0 5px 1px #FF008869;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.front{
+    background-image: url(../img/members/pedro.webp);
+    background-size:auto;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 5px 1px #00d9ff89;
+}
+
+.back{
+    transition: all 0.4s ease-in-out;
+    background-color: #00d9ff09;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.35rem;
+    width: 100%;
+    height: 100%;
+}
+.technology{
+    margin-top: 5%;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rowTech{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 20%;
+}
+
+.rowTech span,
+.technology span{
+    display: flex;
+    align-items: center;
+    width: 35%;
+    justify-content: space-around;
+}
+
+span img{
+    margin-top: 6%;
+}
