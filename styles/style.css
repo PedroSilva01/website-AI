@@ -16,7 +16,6 @@ body{
   line-height: 1.6;
   font-family: 'Castoro';
   flex-direction: column;
-  padding: 5px;
 }
 nav ul {
   display: flex;
@@ -34,6 +33,7 @@ article {
     padding: 0 10%;
     min-width: 35rem;
 }
+
   
   h1 {
     font-size: 32px;
@@ -183,50 +183,7 @@ article {
   .checked-img{
     display: none;
   }
-  /* modificando a parte de team  */
-  .members{
-    max-height: 100vh;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5%;
-  }
-  .team-img{
-    width: 10rem;
-    height: 10rem;
-    /* border-radius: 30%; */
-  }
-  .member{
-    max-width: 70vw;
-    max-height: 28.5vh;
-    width: 70vw;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    margin: 0.75rem;
-  }
-  .team-history {
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    text-justify: inter-word;
-    justify-content: space-between;
-    padding-left: 0.75rem;
-  }
-  .announcement-team{
-    font-family: IncompleetaRegular;
-    text-transform: capitalize;
-    font-size: 2rem;
-    letter-spacing: 0.080em;
-    margin-bottom: 1.25%;
-  }
-  .announcement-team:hover{
-    transition: all 0.75s ease-in-out;
-    animation: pulsate 0.75s ease-in-out infinite;
-  }
-  /* fim team members parte */
+
   .popup-menu{
     width: 100%;
     height: 90%;
