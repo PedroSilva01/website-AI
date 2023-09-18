@@ -38,6 +38,8 @@ body{
     backdrop-filter: 40px;
     padding: 30px 40px 40px 30px;
     border-radius: 0 20px 20px 0;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
 }
 .form-box ::-moz-selection{
     background-color: transparent !important; 
