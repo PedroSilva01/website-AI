@@ -201,4 +201,31 @@ footer span{
   .footerTechnology{
     width: 70%;
   }
+  
+}
+@media screen and (min-width: 300px) and (max-width: 500px){
+  .medias,
+  .ourPolitics{
+    width: 100%;
+  }
+  .lastClass{
+    width: 60%;
+  }
+  .ourPolitics span, .medias span{
+    font-size: 1rem;
+  }
+  .littleMessage{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .littleMessage span,
+  .footerTechnology{
+    width: 100%;
+  }
+  .littleMessage{
+    margin-top: 2.5vh;
+    max-height: 12.5vh;
+  }
 }
