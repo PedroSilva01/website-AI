@@ -1,5 +1,4 @@
 
-console.log("Checked!");
 
 var elementIndex3 = 0;
 var txt3 = ['The CODECTY study group is dedicated to exploring the intricacies of artificial intelligence (AI) and its impact on society. Through rigorous research and analysis, we delve into the fundamentals of AI, providing a comprehensive understanding of how it operates and the implications it has on various industries. Our goal is to equip individuals with the knowledge and skills necessary to build and implement AI systems in situations where they are needed most.'];
