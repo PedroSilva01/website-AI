@@ -23,6 +23,7 @@ footer ::selection{
 footer span{
   color: #000000;
   font-size: 1.1rem;
+  margin: 0.25vh 0% 0.2vh 0%;
 }
 
 .littleMessage{
@@ -114,7 +115,7 @@ footer span{
 @media(max-width: 1366px){
   .medias,
   .ourPolitics{
-    width: 60%;
+    width: 40%;
   }
   .littleMessage{
     width: 70%;
