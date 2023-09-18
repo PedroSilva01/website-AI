@@ -48,7 +48,7 @@ article {
   
   h2 {
     font-size: 24px;
-    min-width: 35rem;
+    width: 1;
     font-family: 'IncompleetaRegular';
   }
   h2:hover{
@@ -61,8 +61,8 @@ article {
     font-size: 16px;
     text-align: justify;
     text-transform: capitalize;
-    min-width: 30rem;
-    width: 35rem;
+    /* min-width: 30rem; */
+    width: 35vw;
   }
   .image-container {
     width: 40%;
@@ -78,19 +78,20 @@ article {
 
 /* Define the style of the scrollbar */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
   }
   ::-webkit-scrollbar-track {
     background: #000;
   }
   ::-webkit-scrollbar-thumb {
     background: #000;
-    border-radius: 30px;
-    border: #00d9ff 1px solid;
+    border-radius: 35px;
+    border: #00d9ff67 1px solid;
+    box-shadow: 0px 0px 1px 2px #00d9ff67;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #00d9ff;    
+    background: #00d9ff67;    
   }
   *{
     margin:0;
@@ -174,7 +175,10 @@ article {
     font-weight: 500;
     cursor: default;
   }
-
+  .artificalAI{
+    display: flex;
+    max-width: 100% !important;
+  }
   #main-logo::selection{  
     background: #000;
     color: #fff;
@@ -227,10 +231,17 @@ article {
   .image-container {
     max-height: 83vh;
   }
+  #codecty-content{
+    width: 50vw;
+  }
 }
 @media(max-width: 1440px){
   .image-container {
     max-height: 69vh;
+    
+  }
+  #codecty-content{
+    width: 45vw;
   }
 }
 @media(max-width: 1366px){
@@ -238,6 +249,29 @@ article {
     max-height: 85%;
     width: auto;
     max-width: 38.5%;
+  }
+  #codecty-content{
+    width: 35vw;
+  }
+}
+@media (min-width: 910px) and (max-width: 1100px) {
+  #codecty-content{
+    width: 100%;
+    
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+@media screen and (min-width: 735px) and (max-width: 900px){
+  #codecty-content{
+    width: 100%;
+  }
+  .image-container{
+    display: none;
+  }
+  ::-webkit-scrollbar {
+    width: 9px;
   }
 }
 @media(max-width: 735px){
@@ -248,6 +282,9 @@ article {
     justify-content: flex-start;
     align-items: center;
     height: auto;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
   }
   article{
     padding: 0%;
@@ -260,22 +297,18 @@ article {
     font-size: 33px;
     width: 100%;
   }
-  h2 {
+  /* h2 {
     font-size: 19px;
     min-width: 35rem;
     font-family: 'IncompleetaRegular';
     width: 100%;
-  }
+  } */
   p {
     font-size: 12px;
     text-align: justify;
     text-transform: capitalize;
     width: 100%;
     word-wrap: break-word;
-  }
-  .image-container {
-    width: 32.6vh;
-    max-height: 32.6vh;
   }
   .nav_bar1Min{
     display: flex;
@@ -300,11 +333,21 @@ article {
     height: 3em;
     align-items: center;
   }
+  #codecty-content{
+    width: 100%;
+  }
+  .image-container{
+    display: none;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
 }
 @media(max-width: 500px){
   .member img{
     width: 8rem;
     height: 8rem;
+    
   }
   .team-history{
     display: flex;
@@ -314,6 +357,15 @@ article {
     justify-content: space-between;
     font-size: 12px;
     letter-spacing: 0rem;
+  }
+  #codecty-content{
+    width: 100%;
+  }
+  .image-container{
+    display: none;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
   }
 }
 

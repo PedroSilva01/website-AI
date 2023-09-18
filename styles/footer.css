@@ -1,165 +1,204 @@
 footer{
-  box-sizing: border-box;
-  margin-top: 7.5vh;
-  height: 40vh;
-  background-color: black;
-  max-height: 45vh;
-  width: 100%;
-  max-width: 100%;
-  background-color: rgb(11, 11, 30);
-  color: #fff;
-}
-.container{
+  background-color: rgba(255, 255, 255, 0.775);
   display: flex;
-  flex-direction: row;
-  max-height: 32vh;
-  height: 80%;
-  width: 100%;
-  max-width: 100%;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 32vh;
+  width: 100%;
+  height: 32vh;
+  /* border-top: solid 2px #FF008879; */
+  /* box-shadow: 0px 0px 8px 5px #00d9ff94; */
+  backdrop-filter: 800px;
+}
+footer ::-moz-selection{
+  background-color: transparent !important; 
+  color: #00d9ff;
+}
+footer ::selection{
+  background-color: transparent !important;
+  color: #00d9ff;
+}
+footer span{
+  color: #000000;
+  font-size: 1.1rem;
+  margin: 0.25vh 0% 0.2vh 0%;
 }
 
-.row{
+.littleMessage{
   display: flex;
-  max-width: 90%;
-  width: 90%;
-  justify-content: space-around;
-  height: 92%;
-}
-.footer-col>h3{
-  font-weight: 300;
-  padding-top: 1.5vh;
-  font-family: 'IncompleetaRegular';
-  letter-spacing: 0.080em;
-  font-size: 1.57em;
-}
-.footer-col>ul>li>a{
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  word-wrap: break-word;
-  flex-wrap: wrap;
-  width: 15vw;
-  max-width: 20vw;
-  text-decoration: none;
-  color: #fff;
+  align-items: center;
+  width: 100%;
+  height: 45%;
+  flex-direction: column;
 }
-.footer-col>ul>li>a:hover{
-  color: #00d9ff;
-  transition: 0.55s;
-  font-family: 'Castoro';
-}
-.footer-col>ul{
+
+.littleMessage span{
   display: flex;
   align-items: center;
-  flex-direction: column;
-  height: 80%;
-  justify-content: space-evenly;
-  margin-top: 2%;
+  justify-content: space-around;
+  width: 30%;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  color: #000000;
 }
-.credits{
+.littleMessage span img{
+  margin-top: 1vh;
+}
+
+.footerTechnology{
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
   margin-top: 2vh;
-  max-height: 6vh;
-  height: 15%;
+  color: #000000;
+}
+
+.ourPolitics a,
+.medias a{
+  text-decoration: none;
+  color: #FF008A;
+}
+
+.ourPolitics a:hover,
+.medias a:hover{
+  letter-spacing: 0.085rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.ourPolitics, .medias{
+  width: 30%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
-.credits>span>a :hover{
-  transition: 0.257ms;
-  color: #00d9ff;
+.ourPolitics{
+  margin-top: 1vh;
 }
-.contact-us{
-  width: 21.85%;
-}
-.contact-us>ul{
-  width: 100%;
-}
-.contact-us>ul>li{
-  width: 100%;
+.ourPolitics span{
+  width: 50%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.footer-col>ul>li>a.mail{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
-.mail>img{
-  background-color: #fff;
-  border-radius: 50%;
-  border-color: black;
-}
-.mail>span{
-  padding-left: 0.75vw;
-}
-.mail>img:hover{
-  width: 33px;
-  transition: 0.15s;
-}
-.social-medias{
+.ourPolitics span a{
+  width: 97%;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
 }
-.social-medias>a{
-  max-width: 40px !important; 
-  width: 38px !important;
-  height: 40px;
-  max-height: 42px;
+.medias {
+  width: 35%;
+  margin-top: 1vh;
 }
-.social-medias>a>img{
-  background-color: #fff;
-  border-radius: 50%;
-  border-color: black;
+.medias span{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
-.social-medias>a>img:hover{
-  width: 40px;
-  height: auto;
-  transition: 0.15s;
+.medias span a{
+  width: 25%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+/* resposive */
+@media(max-width: 1750px){
+
+}
+@media(max-width: 1440px){
+
+}
+@media(max-width: 1366px){
+  .medias,
+  .ourPolitics{
+    width: 40%;
+  }
+  .littleMessage{
+    width: 70%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    letter-spacing: 0.01rem;
+  }
+  .littleMessage span,
+  .footerTechnology{
+    width: 50%;
+  }
+}
+@media (min-width: 910px) and (max-width: 1100px) {
+  .medias,
+  .ourPolitics{
+    width: 60%;
+  }
+  .littleMessage{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    letter-spacing: 0.01rem;
+  }
+  .littleMessage span,
+  .footerTechnology{
+    width: 50%;
+  }
+}
+@media screen and (min-width: 735px) and (max-width: 900px){
+  .medias,
+  .ourPolitics{
+    width: 60%;
+  }
+  .littleMessage{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    letter-spacing: 0.01rem;
+  }
+  .littleMessage span,
+  .footerTechnology{
+    width: 50%;
+  }
 }
 @media(max-width: 735px){
-  .row{
+  .medias,
+  .ourPolitics{
+    width: 80%;
+  }
+  .littleMessage{
+    width: 100%;
+    flex-direction: row;
     display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    justify-content: flex-start;
-  }
-  .footer-col{
-    width: auto;
-  }
-  .footer-col>ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .footer-col>ul>li>a>span{
-    display: none;
-  }
-  .contact-us>ul>li{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    letter-spacing: 0.01rem;
   }
-  .contact-us>ul>li>a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .littleMessage span,
+  .footerTechnology{
+    width: 50%;
   }
 }
-@media(max-width: 500px){
-  .container{
-    width: 100%;
+@media(max-width: 600px){
+  .medias,
+  .ourPolitics{
+    width: 75%;
   }
-  .row{
-    font-size: 13px;
+  .littleMessage{
     width: 100%;
+    flex-direction: column;
     display: flex;
-    align-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    letter-spacing: 0.015rem;
+  }
+  .littleMessage span,
+  .footerTechnology{
+    width: 70%;
   }
 }
