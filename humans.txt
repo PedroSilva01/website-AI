@@ -1,0 +1,17 @@
+/* TEAM */
+Backend Developer: Pedro Victor Alves da Silva 
+Designer: Pedro Victor Alves da Silva
+Content Writer: Dhomini Viana
+Frontend Developer: Dhomini Viana
+
+/* THANKS */
+Thanks to Vercel for awesome functionality.
+
+/* TECH */
+Built with HTML5, CSS3, JavaScript, Python and Django.
+Powered by Vercel.
+
+/* CONTACT */
+Contact us at: contact@codecty.com
+Instagram: @codecty
+Discord: https://discord.gg/Ms6MvtFdUx
